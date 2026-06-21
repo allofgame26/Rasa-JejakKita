@@ -1,0 +1,155 @@
+version: "3.1"
+
+nlu:
+- intent : tanya_seputar_sekolah
+  examples: | 
+   - apa saja fasilitas yang tersedia di sekolah?
+   - apakah sekolah menyediakan layanan bimbingan konseling?
+   - apakah sekolah memiliki program ekstrakurikuler?
+   - bagaimana dengan kegiatan seni dan olahraga di sekolah?
+   - apakah ada program pengembangan diri untuk siswa?
+   - Apa visi dan misi sekolah?
+   - apa saja prestasi yang telah diraih oleh sekolah?
+   - apakah sekolah memiliki program pertukaran pelajar atau kerja sama dengan sekolah lain?
+   - apa visi sekolah?
+   - apa misi sekolah?
+    
+- intent : sapaan
+  examples: | 
+    - halo
+    - hai
+    - selamat pagi
+    - selamat siang
+    - selamat sore
+    - selamat malam
+    - apa kabar
+    - bagaimana kabarmu
+    - apa kabar kamu
+    - Assalamu'alaikum
+    - p
+    - permisi admin
+    - hai bot
+
+- intent : terima_kasih
+  examples: |
+    - terima kasih
+    - makasih
+    - thanks
+    - thank you
+    - thank you very much
+    - Matur nuwun
+    - matur suwun
+    - thx
+
+- intent : profil_sekolah
+  examples: |
+    - info profil sekolah dong
+    - info profil sekolah
+    - info profil sekolahnya dong
+    - info profil sekolahnya
+    - info profil sekolahnya dong ya
+    - info profil sekolahnya ya
+    - info profil sekolahnya dong ya admin
+    - info profil sekolahnya ya admin
+    - info profil sekolahnya dong ya bot
+    - info profil sekolahnya ya bot
+
+- intent : kontak_sekolah
+  examples: |
+    - info kontak sekolah dong
+    - info kontak sekolah
+    - info kontak sekolahnya dong
+    - info kontak sekolahnya
+    - info kontak sekolahnya dong ya
+    - info kontak sekolahnya ya
+    - info kontak sekolahnya dong ya admin
+    - info kontak sekolahnya ya admin
+    - info kontak sekolahnya dong ya bot
+    - info kontak sekolahnya ya bot
+
+- intent : kontak_lokasi
+  examples: |
+    - info lokasi sekolah dong
+    - info lokasi sekolah
+    - info lokasi sekolahnya dong
+    - info lokasi sekolahnya
+    - info lokasi sekolahnya dong ya
+    - info lokasi sekolahnya ya
+    - info lokasi sekolahnya dong ya admin
+    - info lokasi sekolahnya ya admin
+    - info lokasi sekolahnya dong ya bot
+    - info lokasi sekolahnya ya bot
+
+- intent : spp
+  examples: |
+    - berapa biaya spp per bulan?
+    - apakah biaya spp bisa dicicil?
+    - apakah ada biaya uang muka?
+    - info spp dong
+    - rincian spp
+    
+- intent : ppdb
+  examples: |
+    - kapan pendaftaran dibuka?
+    - kapan pendaftaran ditutup?
+    - apa saja persyaratan pendaftaran?
+    - bagaimana cara mendaftar?
+    - info ppdb dong
+    - rincian ppdb
+
+- intent: goodbye
+  examples: |
+    - selamat tinggal
+    - sampai jumpa
+    - sampai bertemu lagi
+
+- intent: setuju
+  examples: |
+    - iyaa
+    - ya
+    - yes
+    - oke
+    - yup
+    - benar
+    - siap
+    - betul
+
+- intent: menolak
+  examples: |
+    - bukan
+    - tidak
+    - bukan begitu
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad

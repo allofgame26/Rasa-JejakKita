@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+
+- rule : Balas Sapaan user
+  steps:
+  - intent: sapaan
+  - action: utter_sapaan
+
+- rule : Balas Pertanyaan SPP user
+  steps:
+  - intent: spp
+  - action: utter_spp
+
+#- rule : Balas Pertanyaan Seputar Sekolah user
+#  steps:
+#  - intent: tanya_seputar_sekolah
+#  - action: action_rag_search
+
+- rule : Balas Pertanyaan PPDB user
+  steps:
+  - intent: ppdb
+  - action: utter_ppdb
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
