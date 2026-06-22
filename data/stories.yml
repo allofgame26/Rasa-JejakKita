@@ -2,29 +2,78 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: Alur Pendaftaran Murid Baru Lengkap (PPDB ke SPP)
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: sapaan
+  - action: utter_sapaan
+  - intent: ppdb
+  - action: utter_ppdb
+  - intent: spp
+  - action: utter_spp
+  - intent: setuju
+  - action: utter_setuju
+  - intent: terima_kasih
+  - action: utter_terima_kasih
+  - intent: pamitan
+  - action: utter_pamitan
 
-- story: sad path 1
+- story: Pengguna Menguji Bot Sebelum Bertanya Lokasi (Validasi Bot)
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: sapaan
+  - action: utter_sapaan
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+  - intent: mood_senang
+  - action: utter_mood_senang
+  - intent: kontak_lokasi
+  - action: utter_kontak_lokasi
+  - intent: terima_kasih
+  - action: utter_terima_kasih
 
-- story: sad path 2
+- story: Wali Murid Mengalami Kendala / Mood Kurang Baik
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: sapaan
+  - action: utter_sapaan
+  - intent: mood_tidak_senang
+  - action: utter_mood_tidak_senang
+  - intent: kontak_sekolah
+  - action: utter_kontak_sekolah
+  - intent: terima_kasih
+  - action: utter_terima_kasih
+  - intent: pamitan
+  - action: utter_pamitan
+
+- story: Penjelajahan Informasi Sekolah tetapi Menolak Penawaran Lanjutan
+  steps:
+  - intent: sapaan
+  - action: utter_sapaan
+  - intent: profil_sekolah
+  - action: utter_profil_sekolah
+  - intent: tanya_seputar_sekolah
+  - action: utter_tanya_seputar_sekolah
+  - intent: menolak
+  - action: utter_menolak
+  - intent: pamitan
+  - action: utter_pamitan
+
+- story: Percakapan Kasual Terputus Pertanyaan Luar Topik (Out of Scope Handling)
+  steps:
+  - intent: sapaan
+  - action: utter_sapaan
+  - intent: profil_sekolah
+  - action: utter_profil_sekolah
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: tanya_seputar_sekolah
+  - action: utter_tanya_seputar_sekolah
+  - intent: terima_kasih
+  - action: utter_terima_kasih
+
+- story: Alur Singkat Langsung Inti Hubungi Tata Usaha
+  steps:
+  - intent: sapaan
+  - action: utter_sapaan
+  - intent: kontak_sekolah
+  - action: utter_kontak_sekolah
+  - intent: pamitan
+  - action: utter_pamitan

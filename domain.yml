@@ -2,48 +2,70 @@ version: "3.1"
 
 intents:
   - sapaan
+  - terima_kasih
+  - profil_sekolah
+  - kontak_sekolah
+  - kontak_lokasi
   - spp
   - ppdb
-#  - tanya_seputar_sekolah
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
+  - tanya_seputar_sekolah
+  - pamitan
+  - setuju
+  - menolak
+  - mood_senang
+  - mood_tidak_senang
+  - out_of_scope
   - bot_challenge
+  
 
 #actions:
   #- action_rag_search
 
 responses:
   utter_sapaan:
-  - text: "Halo, selamat datang di chatbot SD Islam Terpadu Al-Asror Gedangsari. Ada yang bisa saya bantu?" #masih static
+  - text: "Halo, selamat datang di chatbot SD Islam Terpadu Al-Asror Gedangsari. Ada yang bisa saya bantu?"
+
+  utter_terima_kasih:
+  - text: "Sama-sama! Senang bisa membantu Bapak/Ibu. Jika ada hal lain yang ingin ditanyakan, silakan beri tahu saya."
+
+  utter_profil_sekolah:
+  - text: "SD Islam Terpadu Al-Asror Gedangsari adalah sekolah dasar yang mengintegrasikan nilai-nilai Islam dengan kurikulum pendidikan nasional untuk membentuk generasi yang cerdas, berakhlak mulia, dan mandiri."
+
+  utter_kontak_sekolah:
+  - text: "Untuk menghubungi pihak sekolah, Anda dapat melalui WhatsApp resmi Tata Usaha kami di nomor [Masukkan Nomor WA] atau melalui email resmi sekolah."
+
+  utter_kontak_lokasi:
+  - text: "SDIT Al-Asror berlokasi di Gedangsari. Untuk detail peta atau rute lengkapnya, Bapak/Ibu bisa mengunjungi alamat kami secara langsung atau mengikuti rute via Google Maps."
 
   utter_spp:
-  - text: "Untuk Rincian biaya SPP, akan saya carikan datanya sebentar ya..."
+  - text: "Untuk rincian biaya SPP dan administrasi lainnya, sistem kami akan mencarikan datanya sebentar ya... Bapak/Ibu juga bisa menanyakan langsung ke bagian administrasi Tata Usaha."
 
   utter_ppdb:
-  - text: "Informasi mengenai PPDB SDIT Al-Asror Gedangsari dapat dilihat di website resmi kami atau bisa langsung datang ke sekolah untuk informasi lebih lanjut. Atau tanyakan detailnya kepada saya"
-  
-  utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Informasi mengenai PPDB SDIT Al-Asror Gedangsari dapat dilihat di website resmi kami atau bisa langsung datang ke sekolah untuk informasi lebih lanjut. Atau tanyakan detailnya kepada saya."
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_tanya_seputar_sekolah:
+  - text: "Kami menyediakan berbagai fasilitas pendukung, program ekstrakurikuler, bimbingan konseling, serta fokus pada pengembangan karakter religius anak. Ada bagian spesifik yang ingin Bapak/Ibu ketahui?"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_pamitan:
+  - text: "Baik, terima kasih sudah menghubungi kami. Semoga harinya menyenangkan! Wassalamu'alaikum wr. wb."
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_setuju:
+  - text: "Baik, terima kasih atas konfirmasinya. Mari kita lanjutkan ke proses berikutnya."
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_menolak:
+  - text: "Baik, tidak apa-apa. Jika ada hal lain yang berubah atau ingin ditanyakan kembali, silakan hubungi saya kapan saja."
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_mood_senang:
+  - text: "Alhamdulillah, senang mendengarnya! Semoga hari Bapak/Ibu selalu diliputi kebahagiaan dan kelancaran dalam segala urusan."
+
+  utter_mood_tidak_senang:
+  - text: "Waduh, saya ikut prihatin mendengarnya. Semoga hari Bapak/Ibu lekas membaik dan segala urusannya dipermudah ya."
+
+  utter_out_of_scope:
+  - text: "Maaf, pertanyaan tersebut di luar jangkauan informasi sekolah dan donasi. Bisakah saya membantu Anda dengan informasi seputar SDIT Al-Asror atau program donasi kami?"
+
+  utter_bot_challenge:
+  - text: "Saya adalah Asisten Virtual cerdas (Chatbot) resmi SDIT Al-Asror yang siap membantu menjawab pertanyaan Bapak/Ibu seputar informasi sekolah dan donasi secara otomatis."
 
 session_config:
   session_expiration_time: 60

@@ -1,7 +1,7 @@
 version: "3.1"
 
 nlu:
-- intent : tanya_seputar_sekolah
+- intent : tanya_seputar_sekolah #dinamis
   examples: | 
    - apa saja fasilitas yang tersedia di sekolah?
    - apakah sekolah menyediakan layanan bimbingan konseling?
@@ -41,7 +41,7 @@ nlu:
     - matur suwun
     - thx
 
-- intent : profil_sekolah
+- intent : profil_sekolah #dinamis
   examples: |
     - info profil sekolah dong
     - info profil sekolah
@@ -54,7 +54,7 @@ nlu:
     - info profil sekolahnya dong ya bot
     - info profil sekolahnya ya bot
 
-- intent : kontak_sekolah
+- intent : kontak_sekolah #dinamis
   examples: |
     - info kontak sekolah dong
     - info kontak sekolah
@@ -66,8 +66,10 @@ nlu:
     - info kontak sekolahnya ya admin
     - info kontak sekolahnya dong ya bot
     - info kontak sekolahnya ya bot
+    - apakah ada sosial media resmi sekolah?
+    - apakah sekolah memiliki akun media sosial resmi?
 
-- intent : kontak_lokasi
+- intent : kontak_lokasi #dinamis
   examples: |
     - info lokasi sekolah dong
     - info lokasi sekolah
@@ -80,15 +82,17 @@ nlu:
     - info lokasi sekolahnya dong ya bot
     - info lokasi sekolahnya ya bot
 
-- intent : spp
+- intent : spp #dinamis
   examples: |
     - berapa biaya spp per bulan?
     - apakah biaya spp bisa dicicil?
     - apakah ada biaya uang muka?
     - info spp dong
     - rincian spp
+    - apakah ada biaya tambahan untuk kegiatan ekstrakurikuler?
+    - apakah ada cara pembayaran spp?
     
-- intent : ppdb
+- intent : ppdb #dinamis
   examples: |
     - kapan pendaftaran dibuka?
     - kapan pendaftaran ditutup?
@@ -97,11 +101,15 @@ nlu:
     - info ppdb dong
     - rincian ppdb
 
-- intent: goodbye
+- intent: pamitan
   examples: |
     - selamat tinggal
     - sampai jumpa
     - sampai bertemu lagi
+    - wassalamu'alaikum
+    - dadah
+    - bye
+    - goodbye
 
 - intent: setuju
   examples: |
@@ -113,43 +121,68 @@ nlu:
     - benar
     - siap
     - betul
+    - baik
+    - oke baik
+    - mengerti
+    - oke terima kasih
 
 - intent: menolak
   examples: |
     - bukan
     - tidak
     - bukan begitu
+    - tidak begitu
+    - tidak benar
+    - mohon maaf
+    - skip dulu
+    - tidak terima kasih
+    - ga usah
+    
 
-- intent: mood_great
+- intent: mood_senang
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - alhamdulillah kabar baik
+    - luar biasa hari ini
+    - perasaanku sedang sangat bahagia
+    - mantap banget
+    - sangat menyenangkan
+    - puji tuhan baik
+    - hari yang indah
+    - wah asyik sekali
+    - senang sekali rasanya
 
-- intent: mood_unhappy
+- intent: mood_tidak_senang
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - saya sedang sedih
+    - hari ini sangat melelahkan
+    - perasaanku lagi hancur
+    - kecewa banget sih
+    - lagi pusing mikirin kerjaan
+    - kurang baik nih kabarnya
+    - lagi badmood
+    - aduh sedih banget
+    - mood lagi hancur  
+
+- intent: out_of_scope
+  examples: |
+    - bagaimana cara membuat nasi goreng yang enak?
+    - siapa yang menang pertandingan bola semalam?
+    - besok cuacanya bakal hujan atau panas ya?
+    - rekomendasi tempat makan enak dong
+    - tolong pesankan tiket pesawat untuk besok
+    - bagaimana cara install ulang sistem operasi?
+    - bisa bantu kerjakan soal matematika ini tidak?
+    - info jadwal film di bioskop hari ini dong
+    - di mana bengkel motor terdekat dari sini?
+
+- intent: bot_challenge
+  examples: |
+    - ini yang membalas pesan manusia atau robot?
+    - halo, ini dengan bot ya?
+    - apakah saya sedang berbicara dengan mesin AI?
+    - admin aslinya ke mana nih, kok bot yang balas?
+    - tolong buktikan kalau kamu bukan robot
+    - ini pakai sistem balasan otomatis ya?
+    - kamu program komputer atau manusia asli?
+    - saya mau bicara langsung dengan staf admin dong
+    - ini chatnya dikendalikan sama mesin kan?

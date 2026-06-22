@@ -2,32 +2,89 @@ version: "3.1"
 
 rules:
 
-- rule : Balas Sapaan user
+# ==========================================
+# 1. ATURAN INTERAKSI DASAR & KESOPANAN
+# ==========================================
+- rule: Menjawab sapaan pembuka (Greeting)
   steps:
   - intent: sapaan
   - action: utter_sapaan
 
-- rule : Balas Pertanyaan SPP user
+- rule: Menjawab ucapan terima kasih dari pengguna
   steps:
-  - intent: spp
-  - action: utter_spp
+  - intent: terima_kasih
+  - action: utter_terima_kasih
 
-#- rule : Balas Pertanyaan Seputar Sekolah user
-#  steps:
-#  - intent: tanya_seputar_sekolah
-#  - action: action_rag_search
+- rule: Menutup percakapan dengan sopan (Pamitan)
+  steps:
+  - intent: pamitan
+  - action: utter_pamitan
 
-- rule : Balas Pertanyaan PPDB user
+- rule: Merespons persetujuan (kapan pun)
+  steps:
+  - intent: setuju
+  - action: utter_setuju
+
+- rule: Merespons penolakan (kapan pun)
+  steps:
+  - intent: menolak
+  - action: utter_menolak
+
+# ==========================================
+# 2. ATURAN BATASAN SISTEM & CHITCHAT
+# ==========================================
+- rule: Merespons saat pengguna menguji apakah ini bot atau manusia
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- rule: Menolak halus pertanyaan di luar konteks sekolah/donasi (Sapu Jagat)
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+# ==========================================
+# 3. ATURAN EMPATI & SUASANA HATI
+# ==========================================
+- rule: Merespons saat pengguna sedang dalam mood yang baik
+  steps:
+  - intent: mood_senang
+  - action: utter_mood_senang
+
+- rule: Memberikan empati saat pengguna dalam mood yang buruk
+  steps:
+  - intent: mood_tidak_senang
+  - action: utter_mood_tidak_senang
+
+# ==========================================
+# 4. ATURAN FAQ INFORMASI SEKOLAH (STATIS)
+# ==========================================
+- rule: Memberikan informasi profil SDIT Al-Asror
+  steps:
+  - intent: profil_sekolah
+  - action: utter_profil_sekolah
+
+- rule: Memberikan informasi nomor kontak dan email sekolah
+  steps:
+  - intent: kontak_sekolah
+  - action: utter_kontak_sekolah
+
+- rule: Memberikan informasi alamat dan lokasi sekolah
+  steps:
+  - intent: kontak_lokasi
+  - action: utter_kontak_lokasi
+
+- rule: Memberikan jawaban umum seputar fasilitas dan visi misi
+  steps:
+  - intent: tanya_seputar_sekolah
+  - action: utter_tanya_seputar_sekolah
+
+- rule: Memberikan informasi singkat mengenai PPDB
   steps:
   - intent: ppdb
   - action: utter_ppdb
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Memberikan respons terkait pencarian rincian biaya SPP
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: spp
+  - action: utter_spp
