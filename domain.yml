@@ -21,12 +21,32 @@ intents:
 #actions:
   #- action_rag_search
 
+# Menambahkan respon untuk setiap intent yang ada di data/nlu.yml
+
 responses:
   utter_sapaan:
   - text: "Halo, selamat datang di chatbot SD Islam Terpadu Al-Asror Gedangsari. Ada yang bisa saya bantu?"
+  - text: "Assalamu'alaikum wr. wb. Saya bot SDIT Al-Asror, siap membantu Bapak/Ibu hari ini."
+  - text: "Selamat datang! Silakan ketik pertanyaan Anda seputar informasi sekolah atau pendaftaran."
+  - text: "Halo, Bapak/Ibu. Ada informasi spesifik tentang SDIT Al-Asror yang sedang dicari?"
+  - text: "Assalamu'alaikum! Senang bisa menyapa Anda. Apa yang bisa saya bantu hari ini?"
+  - text: "Hai! Saya asisten virtual sekolah. Apakah Bapak/Ibu butuh bantuan seputar pendaftaran atau donasi?"
+  - text: "Selamat datang! Silakan tanyakan apa saja terkait fasilitas dan program SDIT Al-Asror."
+  - text: "Assalamu'alaikum. Mari saya bantu temukan informasi sekolah yang Bapak/Ibu butuhkan."
+  - text: "Halo, terima kasih sudah menghubungi kami. Ketik pertanyaan Anda di sini ya."
+  - text: "Hai! Saya siap membantu menjawab pertanyaan seputar biaya, kurikulum, atau program sekolah."
 
   utter_terima_kasih:
   - text: "Sama-sama! Senang bisa membantu Bapak/Ibu. Jika ada hal lain yang ingin ditanyakan, silakan beri tahu saya."
+  - text: "Terima kasih kembali! Jika ada lagi yang ingin ditanyakan, jangan ragu ya."
+  - text: "Sama-sama. Semoga informasinya bermanfaat!"
+  - text: "Dengan senang hati, Bapak/Ibu. Ada lagi yang bisa saya bantu hari ini?"
+  - text: "Alhamdulillah, senang bisa membantu. Silakan jika masih ada pertanyaan lain."
+  - text: "Terima kasih kembali atas kepercayaannya menghubungi sistem kami."
+  - text: "Sama-sama! Saya selalu siaga di sini jika Bapak/Ibu butuh informasi tambahan."
+  - text: "Kembali kasih! Semoga aktivitas Bapak/Ibu berjalan lancar."
+  - text: "Sama-sama. Jangan sungkan untuk bertanya lagi nanti ya!"
+  - text: "Terima kasih juga. Semoga urusan Bapak/Ibu senantiasa dipermudah."
 
   utter_profil_sekolah:
   - text: "SD Islam Terpadu Al-Asror Gedangsari adalah sekolah dasar yang mengintegrasikan nilai-nilai Islam dengan kurikulum pendidikan nasional untuk membentuk generasi yang cerdas, berakhlak mulia, dan mandiri."
@@ -48,24 +68,87 @@ responses:
 
   utter_pamitan:
   - text: "Baik, terima kasih sudah menghubungi kami. Semoga harinya menyenangkan! Wassalamu'alaikum wr. wb."
+  - text: "Terima kasih sudah menghubungi SDIT Al-Asror. Selamat beraktivitas!"
+  - text: "Semoga harinya menyenangkan. Wassalamu'alaikum!"
+  - text: "Sampai jumpa! Jangan ragu menghubungi kami lagi jika butuh bantuan di kemudian hari."
+  - text: "Terima kasih atas waktunya. Mari, silakan melanjutkan aktivitas Bapak/Ibu."
+  - text: "Wassalamu'alaikum. Sehat dan sukses selalu untuk Bapak/Ibu sekeluarga."
+  - text: "Selamat tinggal! Kami tunggu kehadiran Bapak/Ibu di lingkungan SDIT Al-Asror."
+  - text: "Terima kasih banyak. Semoga informasi tadi membantu. Sampai jumpa!"
+  - text: "Pamit diterima! Semoga hari-hari Bapak/Ibu penuh berkah. Wassalamu'alaikum."
+  - text: "Baik, percakapan saya akhiri. Selamat beristirahat atau beraktivitas kembali!"
 
   utter_setuju:
   - text: "Baik, terima kasih atas konfirmasinya. Mari kita lanjutkan ke proses berikutnya."
+  - text: "Siap, saya mengerti. Akan segera saya tindak lanjuti."
+  - text: "Oke, informasi telah saya terima."
+  - text: "Baiklah, mari kita melangkah ke informasi selanjutnya."
+  - text: "Siap, laksanakan! Ada lagi yang perlu kita bahas?"
+  - text: "Oke, setuju. Apa langkah Bapak/Ibu selanjutnya?"
+  - text: "Baik, konfirmasi Bapak/Ibu sudah saya catat dalam sistem."
+  - text: "Sip! Mari kita lanjutkan percakapan ini."
+  - text: "Oke, dipahami. Silakan ikuti instruksi berikutnya ya."
+  - text: "Baik, terima kasih sudah menyetujui hal tersebut."
 
   utter_menolak:
   - text: "Baik, tidak apa-apa. Jika ada hal lain yang berubah atau ingin ditanyakan kembali, silakan hubungi saya kapan saja."
+  - text: "Oke, saya paham. Jika berubah pikiran, beri tahu saya saja."
+  - text: "Siap, tidak apa-apa. Ada topik lain yang ingin Bapak/Ibu tanyakan?"
+  - text: "Baiklah, jika dirasa belum perlu, mari kita bahas hal lain."
+  - text: "Tidak masalah. Silakan beri tahu jika ada yang bisa saya bantu lagi."
+  - text: "Oke, saya hargai keputusan tersebut. Butuh informasi yang lain?"
+  - text: "Baik, kita batalkan langkah yang satu ini. Ada lagi yang ingin ditanyakan?"
+  - text: "Sip, saya mengerti. Jangan ragu bertanya mengenai topik yang berbeda."
+  - text: "Siap, abaikan saja jika memang tidak diperlukan saat ini."
+  - text: "Baik, saya akan menyesuaikan dengan keputusan dan kebutuhan Bapak/Ibu."
 
   utter_mood_senang:
   - text: "Alhamdulillah, senang mendengarnya! Semoga hari Bapak/Ibu selalu diliputi kebahagiaan dan kelancaran dalam segala urusan."
+  - text: "Wah, ikut senang! Semoga harinya terus berjalan lancar ya, Bapak/Ibu."
+  - text: "Alhamdulillah! Semangat terus dan semoga berkah selalu."
+  - text: "Mantap! Semoga semangat positif ini menular ke sekeliling Bapak/Ibu."
+  - text: "Ikut bahagia! Ada yang bisa saya bantu agar harinya makin sempurna?"
+  - text: "Syukurlah kalau begitu. Semoga kelancaran senantiasa menyertai keluarga Bapak/Ibu."
+  - text: "Wah, energi positifnya sampai ke sistem saya! Selamat beraktivitas kembali ya."
+  - text: "Alhamdulillah, turut gembira mendengarnya."
+  - text: "Senang mendengarnya! Semoga urusan Bapak/Ibu hari ini dilancarkan semua."
+  - text: "Luar biasa! Pertahankan semangat baiknya ya, Bapak/Ibu."
 
   utter_mood_tidak_senang:
   - text: "Waduh, saya ikut prihatin mendengarnya. Semoga hari Bapak/Ibu lekas membaik dan segala urusannya dipermudah ya."
+  - text: "Mohon maaf mendengar hal itu. Semoga beban Bapak/Ibu segera diringankan."
+  - text: "Semoga harinya cepat membaik ya. Ada informasi sekolah yang bisa saya bantu carikan?"
+  - text: "Saya doakan semoga hal yang membuat sedih atau lelah segera berlalu."
+  - text: "Tetap semangat ya, Bapak/Ibu! Badai pasti berlalu."
+  - text: "Duh, semoga masalahnya cepat selesai dan Bapak/Ibu bisa tersenyum lagi."
+  - text: "Sabar ya, semoga ada hikmah baik di balik hal yang kurang menyenangkan hari ini."
+  - text: "Ikut sedih mendengarnya. Kalau butuh bantuan sistem untuk mengalihkan pikiran, saya siap bantu."
+  - text: "Semoga esok hari membawa kabar dan suasana hati yang lebih baik untuk Bapak/Ibu."
+  - text: "Jangan patah semangat! Semoga urusan yang sedang berat segera dipermudah oleh Allah SWT."
 
   utter_out_of_scope:
   - text: "Maaf, pertanyaan tersebut di luar jangkauan informasi sekolah dan donasi. Bisakah saya membantu Anda dengan informasi seputar SDIT Al-Asror atau program donasi kami?"
+  - text: "Maaf, saya hanya diprogram untuk menjawab seputar informasi sekolah, akademik, dan donasi."
+  - text: "Waduh, untuk topik itu saya belum punya jawabannya. Boleh kita kembali bahas seputar SDIT Al-Asror?"
+  - text: "Mohon maaf, hal tersebut tidak berkaitan dengan layanan atau program sekolah kami."
+  - text: "Maaf ya, saya kurang paham soal itu. Ada hal lain tentang pendaftaran yang bisa saya bantu?"
+  - text: "Hmm, sepertinya itu di luar topik sekolah kita. Ada pertanyaan lain seputar SDIT?"
+  - text: "Maaf, bot ini dikhususkan untuk melayani pertanyaan terkait SDIT Al-Asror saja."
+  - text: "Saya belum dilatih untuk menjawab pertanyaan itu. Mari kembali fokus ke informasi pendidikan!"
+  - text: "Pertanyaan yang menarik, tapi maaf saya tidak bisa menjawab hal di luar konteks sekolah."
+  - text: "Mohon maaf Bapak/Ibu, pertanyaan tersebut tidak ada dalam basis data sistem kami."
 
   utter_bot_challenge:
   - text: "Saya adalah Asisten Virtual cerdas (Chatbot) resmi SDIT Al-Asror yang siap membantu menjawab pertanyaan Bapak/Ibu seputar informasi sekolah dan donasi secara otomatis."
+  - text: "Saya adalah AI yang ditugaskan untuk membantu menjawab pertanyaan dasar Bapak/Ibu dengan cepat."
+  - text: "Ya, Anda sedang berbicara dengan program chatbot resmi milik SDIT Al-Asror."
+  - text: "Halo! Saya mesin penjawab otomatis. Namun jangan khawatir, jawaban saya berdasarkan data resmi sekolah."
+  - text: "Benar sekali, saya adalah bot. Jika butuh bicara dengan manusia, Anda bisa meminta kontak WA Tata Usaha."
+  - text: "Saya robot asisten, dikembangkan khusus untuk mempermudah Bapak/Ibu mencari info sekolah."
+  - text: "Iya, saya bot. Walaupun bukan manusia, saya berusaha merespons dengan sebaik mungkin!"
+  - text: "Anda betul! Saya adalah program AI sekolah. Ada yang bisa saya carikan dari sistem?"
+  - text: "Saya memang bukan admin manusia, tapi chatbot yang siap melayani pertanyaan Anda kapan saja."
+  - text: "Betul, saya sistem otomatis. Jika jawaban saya dirasa kurang, silakan tanyakan kontak staf kami ya."
 
 session_config:
   session_expiration_time: 60
